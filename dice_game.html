@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<style>
+    html{
+        font-size: 10px;
+    }
+
+    .main-container{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        
+        background-color: rgb(74, 69, 69);
+
+        text-align: center;
+        justify-content: center;
+
+    }
+
+h1{
+    font-family: 'Anton', sans-serif;
+   
+    font-style: italic;
+    font-size: 10rem;
+    text-shadow: rgb(0, 0, 0) 0.2rem 0.2rem;
+    color: green;
+    font-weight: 900;
+}
+
+div{
+    background-color: antiquewhite;
+}
+.container{
+
+    display: grid;
+    height: 40rem;
+    width: 40rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "player-1 player-1"
+    "dice-1 dice-2";
+    gap: 1rem;
+
+}
+
+
+.container-1{
+
+}
+
+#player-1{
+   
+    grid-area: "player-1";
+}
+
+#player-2{
+   
+    grid-area: "player-2";
+}
+
+#dice-1{
+grid-area: "dice-1";
+}
+
+#dice-2{
+    grid-area: "dice-2";
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+#player{
+    color: green;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: cursive;
+}
+</style>
+
+</head>
+<body>
+
+
+    <div class="main-container">
+
+    <div>
+        <h1>refresh to play</h1>
+    </div>
+
+    <div class="container">
+
+    <div id="player">Player 1</div>
+    <div id="player">Player 2</div>
+    <div class="dice" id="dice1"><img id="player-1img" src="./dice-1.JPG"></div>
+    <div class="dice" id="dice2"><img id="player-2img" src="./dice-2.JPG"></div>
+
+    </div>
+    
+<div> App Brewery </div>
+
+</div>
+    <script src="dicejavascript.js"></script>
+
+</body>
+</html>
